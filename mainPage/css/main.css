@@ -1,0 +1,265 @@
+/* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Hammersmith+One");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+body {
+  background: #D03131;
+  font-family: "Hammersmith One", sans-serif;
+}
+
+.select-N,
+img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.none {
+  display: none !important;
+}
+
+.header__nav {
+  margin-top: 37px;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.nav__counter {
+  display: flex;
+  justify-content: end;
+  background: #393939;
+  width: 337px;
+  height: 74px;
+  border-radius: 40px 40px 40px 40px;
+  padding-right: 85px;
+  position: relative;
+  box-shadow: 0px 6px 16px 3px rgba(0, 0, 0, 0.46);
+  -webkit-box-shadow: 0px 6px 16px 3px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: 0px 6px 16px 3px rgba(0, 0, 0, 0.46);
+}
+
+.nav__points {
+  font-family: "Baloo Bhai 2", sans-serif;
+  font-size: 45px;
+  color: #79D800;
+}
+
+.nav__point_icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.vinyl-record {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+
+.vinyl-record__img {
+  margin-top: 90px;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.popup-shop {
+  z-index: 100;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-shop__body {
+  width: 80%;
+  height: 98%;
+  background-color: rgba(57, 57, 57, 0.8);
+  border-radius: 50px;
+  padding: 30px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup-shop__close img {
+  pointer-events: none;
+}
+
+.nav__shop_open-ic {
+  pointer-events: none;
+}
+
+.popup-shop__items {
+  margin-top: 30px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  row-gap: 30px;
+}
+
+.popup-shop__item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  background-color: rgba(57, 57, 57, 0.9);
+  padding: 0 30px;
+  border-radius: 30px;
+  opacity: 0.5;
+}
+
+.popup-shop__item-name {
+  justify-self: start;
+  font-family: #D03131;
+  color: #79D800;
+  font-size: 35px;
+}
+
+.popup-shop__price-item {
+  font-family: "Baloo Bhai 2", sans-serif;
+  color: #79D800;
+  font-size: 45px;
+}
+
+.popup-shop__buy {
+  justify-self: end;
+  pointer-events: none;
+  background-color: #79D800;
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 35px;
+  padding: 3px 56.5px;
+  border-radius: 50px;
+}
+
+.popup-shop__item_available {
+  opacity: 1;
+}
+.popup-shop__item_available .popup-shop__buy {
+  pointer-events: all;
+}
+
+.cursor-wrapper {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  top: 0;
+  left: 0;
+}/*# sourceMappingURL=main.css.map */

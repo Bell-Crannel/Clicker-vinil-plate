@@ -1,0 +1,215 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+body {
+  background-color: #D03131;
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+img {
+  width: 60vw;
+  height: 60vh;
+}
+
+.playBtn {
+  color: white;
+  font-family: "Hammersmith One", sans-serif;
+  background-color: #79D800;
+  font-weight: 700;
+  margin-top: 40px;
+  font-size: 40px;
+  padding: 10px 80px;
+  border-radius: 30px 30px;
+}
+
+.gameIcon.gameIcon_active {
+  animation-name: translateRight;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.playBtn.playBtn_active {
+  animation-name: translateLeft;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes translateLeft {
+  0% {
+    transform: translateX(0);
+  }
+  2% {
+    transform: translateX(2px);
+  }
+  5% {
+    transform: translateX(4px);
+  }
+  10% {
+    transform: translateX(7px);
+  }
+  15% {
+    transform: translateX(14px);
+  }
+  20% {
+    transform: translateX(20px);
+  }
+  29% {
+    transform: translateX(28px);
+  }
+  95% {
+    transform: translateX(2000px);
+  }
+  100% {
+    transform: translateX(2000px);
+    display: none;
+  }
+}
+@keyframes translateRight {
+  0% {
+    transform: translateX(0);
+  }
+  2% {
+    transform: translateX(-2px);
+  }
+  5% {
+    transform: translateX(-4px);
+  }
+  10% {
+    transform: translateX(-7px);
+  }
+  15% {
+    transform: translateX(-14px);
+  }
+  20% {
+    transform: translateX(-20px);
+  }
+  29% {
+    transform: translateX(-28px);
+  }
+  95% {
+    transform: translateX(-2000px);
+  }
+  100% {
+    transform: translateX(-2000px);
+    display: none;
+  }
+}/*# sourceMappingURL=registration.css.map */

@@ -1,0 +1,17 @@
+.vinyl-record {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+
+
+}
+
+.vinyl-record__img {
+    margin-top: 90px;
+    pointer-events: all;
+    cursor: pointer;
+    
+    
+}

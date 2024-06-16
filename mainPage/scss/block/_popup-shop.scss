@@ -1,0 +1,88 @@
+.popup-shop {
+    z-index: 100;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.popup-shop__body {
+    width: 80%;
+    height: 98%;
+    background-color: rgba($color: $second-dark, $alpha: 80%);
+    border-radius: 50px;
+    padding: 30px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.popup-shop__close {
+
+   & img{
+    pointer-events: none;
+   }
+}
+
+.nav__shop_open-ic{
+ pointer-events: none;
+}
+
+.popup-shop__items {
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    row-gap: 30px;
+
+}
+
+.popup-shop__item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    background-color: rgba($color: $second-dark, $alpha: 90%);
+    padding: 0 30px;
+    border-radius: 30px;
+    opacity: 0.5;
+}
+
+.popup-shop__item-name {
+    justify-self: start;
+    font-family: $main;
+    color: $accent;
+    font-size: 35px;
+}
+
+.popup-shop__price-item {
+    font-family: $font-second;
+    color: $accent;
+    font-size: 45px;
+}
+
+
+.popup-shop__buy {
+    justify-self: end;
+    pointer-events: none;
+    background-color: $accent;
+    font-family: $font-main;
+    font-size: 35px;
+    padding: 3px 56.5px;
+    border-radius: 50px;
+}
+
+.popup-shop__item_available {
+    opacity: 1;
+
+    & .popup-shop__buy {
+        pointer-events: all;
+    }
+}
